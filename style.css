@@ -25,7 +25,7 @@ body{
 }
 
 #details{
-    width: 400px;
+    max-width: 400px;
     color: white;
 }
 
@@ -54,7 +54,7 @@ h1{
 }
 
 #container{
-    width: 450px;
+    max-width: 450px;
 }
 
 #span1{
@@ -131,4 +131,16 @@ form input:focus{
     background-repeat: no-repeat;
     background-position: calc(100% - 1.5rem) 50%;
     color: var(--red);
+}
+
+@media (max-width:670px){
+    body{
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+    h1, #details p{
+        text-align: center;
+
+    }
 }
