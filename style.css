@@ -54,7 +54,7 @@ h1{
 }
 
 #container{
-    max-width: 450px;
+    min-width: 450px;
 }
 
 #span1{
@@ -84,11 +84,6 @@ form input{
     font-weight: var(--dark);
     color: var(--dark-blue);
     outline: none;
-}
-
-form input:focus{
-    border: none;
-    outline: 1px solid var(--dark-blue);
 }
 
 #button{
@@ -133,14 +128,18 @@ form input:focus{
     color: var(--red);
 }
 
-@media (max-width:670px){
+@media (max-width:750px){
     body{
         flex-direction: column;
         height: auto;
         padding: 15px;
+        padding-bottom: 50px;
     }
     h1, #details p{
         text-align: center;
 
+    }
+    #container{
+        min-width: auto;
     }
 }

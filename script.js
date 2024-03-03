@@ -1,12 +1,14 @@
 const form = document.querySelector('form');
 const inputList = document.querySelectorAll('input');
+const firstName = document.getElementById('fname');
+const lastName = document.getElementById('lname');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+
+
+
 
 form.addEventListener('submit',function(event){
-    const firstName = document.getElementById('fname');
-    const lastName = document.getElementById('lname');
-    const email = document.getElementById('email');
-    const password = document.getElementById('password');
-
     for(let input of inputList){
         input.placeholder = '';
     }
